@@ -1,0 +1,204 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    padding: 20px;
+}
+.calculator {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.3s ease;
+}
+.calculator:hover {
+    transform: translateY(-5px);
+}
+h1 {
+    color: #1e3c72;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1e3c72;
+    font-weight: 600;
+    font-size: 14px;
+}
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.symbol {
+    position: absolute;
+    left: 12px;
+    color: #1e3c72;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+    border-color: #1e3c72;
+    box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+}
+input:invalid {
+    border-color: #ff4444;
+    animation: shake 0.3s linear;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+#result {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+    .result-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .result-row:last-child {
+        border-bottom: none;
+    }
+    .result-label {
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .result-value {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .animated-number {
+        transition: all 0.3s ease;
+    }
+    .unit {
+        font-size: 0.8em;
+        opacity: 0.8;
+        margin-left: 5px;
+    }
+
+    .calculator-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .calculator-list li {
+        margin: 15px 0;
+    }
+    
+    .calculator-list a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: #1e3c72;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: color 0.3s ease;
+    }
+    
+    .calculator-list a:hover {
+        color: #2a5298;
+    }
+
+    .maintenance-page {
+        text-align: center;
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        height: 100vh;
+    }
+    
+    .maintenance-page h1 {
+        font-size: 24px;
+        color: #1e3c72;
+        margin-bottom: 20px;
+    }
+    
+    .maintenance-page p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+    
+    .maintenance-page img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        display: block; 
+    }
+    
+    .maintenance-page .btn {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        background: #1e3c72;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        display: inline-block;
+        margin-top: 20px; /* Odstup od GIFu */
+    }
+    
+    .maintenance-page .btn:hover {
+        background: #2a5298;
+    }
+
+
+    .btn {
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        background: #1e3c72;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px; 
+    }
+    
+    .btn:hover {
+        background: #2a5298;
+    }
+    
